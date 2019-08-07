@@ -1,0 +1,1 @@
+% test ERBspectfiles=dir('*.wav');num=length(files);for(counter=1:num) [x,sr]=audioread(files(counter).name);figure(counter); ERBspect(x,sr);title('FFT-based (default)'); drawnow;set(gca, 'clim',[0 1])%figure(2); %ERBspect(x,sr,'gammatone');%title('gammatone-based');end
